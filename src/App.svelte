@@ -24,7 +24,7 @@
   let finalSideLen = $derived(sideLen * scale + 2 * padding)
   let url = $state("https://qart.baetylboy.biz")
   let files: undefined | FileList = $state()
-  let brightnessThreshold = $state(140)
+  let brightnessThreshold = $state(213.5)
   let random = $state(false)
   let working = $state(false)
 
