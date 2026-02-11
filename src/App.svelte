@@ -113,7 +113,10 @@
 
 </script>
 
-<main class=" grid lg:grid-cols-[auto_auto] w-fit gap-2 lg:gap-5 grid-rows-[auto_auto] max-h-screen">
+<div class="lg:grow"></div>
+
+
+<main class=" grid lg:grid-cols-[auto_auto] w-fit gap-2 lg:gap-5 grid-rows-[auto_auto] max-h-screen flex-none">
   <div class="flex flex-col gap-5 justify-center items-center">
     <div class="flex lg:flex-row flex-col gap-2 lg:gap-5 justify-center items-center">
       <label for="target-url" hidden>Target URL</label>
@@ -165,7 +168,9 @@
   </div>
 </main>
 
-<footer class="lg:pt-0 pt-5">
+<div class="lg:grow"></div>
+
+<footer class="p-5">
   <p class="text-sm lg:text-base">Created by <a href="https://baetylboy.biz">Andrew Yurovchak</a>. Technique by <a href="https://research.swtch.com/qart">Russ Cox</a></p>
 </footer>
 
