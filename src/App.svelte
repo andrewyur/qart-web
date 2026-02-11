@@ -58,7 +58,13 @@
   
       let resized = new Uint8Array(imgdata.data.buffer)
   
-      let code = await generate(version, url, resized, brightnessThreshold, random, false, padding, scale)
+      let code
+      try {
+        code = await generate(version, url, resized, brightnessThreshold, random, false, padding, scale)
+      } catch (e) {
+        working = false
+        return
+      }
   
       let codeData = new Uint8ClampedArray(code);
   
