@@ -71,7 +71,7 @@
   function saveImage() {
     const anchor = document.createElement('a');
     anchor.href = canvas3.toDataURL()
-    anchor.download = "qart code";
+    anchor.download = `${files?.[0].name}-qart`;
     anchor.click();
     anchor.remove();
   }
