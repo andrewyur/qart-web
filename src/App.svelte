@@ -122,7 +122,7 @@
       <label for="target-url" hidden>Target URL</label>
       <input class="input" id="target-url" type="url" bind:value={url} placeholder="https://example.com"/>
       <label for="upload" hidden>Upload Image</label>
-      <input class="file-input file:bg-stone-300 file:mr-4" id="upload" type="file" accept=".png,.jpeg,.webp" bind:files={files} required onchange={updateImage}/>
+      <input class="file-input file:bg-stone-300 file:mr-4" id="upload" type="file" accept=".png,.jpeg,.webp,.jpg" bind:files={files} required onchange={updateImage}/>
     </div>
     <div class="flex flex-row gap-5 justify-center">
       <!-- svelte-ignore a11y_missing_attribute -->
